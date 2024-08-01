@@ -1,0 +1,22 @@
+.col-12 {
+    background-color: gray;
+    border-radius: 20px;
+    color: black;
+}
+
+.section {
+    text-align: justify;
+}
+
+.container-fluid .row {
+    min-height: 100vh;
+}
+
+@media (max-width:300px) {
+    .navbar-brand > div {
+        font-size: 90%;
+    }
+    .navbar-toggler {
+        width: auto;
+    }
+}

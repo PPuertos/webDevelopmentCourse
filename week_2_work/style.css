@@ -1,0 +1,91 @@
+body {
+    margin-top: 80px;
+    text-align: justify;
+}
+
+.navbar {
+    opacity: .9;
+}
+
+#image-paco-puertos {
+    mask-image: linear-gradient(
+        black 80%,
+        transparent
+    );
+}
+#my-name {
+    border-bottom: 2px solid #A4A091;
+}
+
+#about-me > .col-12 {
+    color: #A4A091;
+    padding: 20px;
+}
+
+#about-me > .col-12 > .container {
+    padding: 30px;
+    border: 2px solid #A4A091;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#about-me, #experience {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    border-top: 2px solid #A4A091;
+}
+
+#projects {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    border-top: 2px solid #A4A091;
+}
+
+#projects > .col-12 > .container {
+    padding: 30px;
+    height: 100%;
+    border: 3px solid #A4A091;
+}
+
+#projects > .col-12 {
+    padding: 20px;
+}
+
+#experience-content > .col-9 {
+    border-left: 2px solid #A4A091;
+}
+
+#experience-content > .col-3 > .text-dark-2 {
+    writing-mode: vertical-rl;
+}
+
+#experience-content > .col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-info {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+svg{
+    width: 2em;
+    height: 2em;
+}
+
+@media (min-width:768px){
+    #experience-content > .col-3 > .text-dark-2 {
+        writing-mode: horizontal-tb;
+    }
+
+    #experience-content > .col-3 {
+        align-items: start;
+        justify-content: end;
+    }
+}
