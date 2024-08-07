@@ -89,3 +89,11 @@ svg{
         justify-content: end;
     }
 }
+
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23A4A091" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  }
+
+  .btn-close {
+    filter: invert(70%) sepia(5%) saturate(250%) hue-rotate(200deg) brightness(95%) contrast(90%);
+  }

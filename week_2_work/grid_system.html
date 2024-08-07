@@ -10,44 +10,59 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <!-- Navigation Bar-->
-    <nav class="navbar navbar-expand-md fixed-top bg-dark">
-      <div class="container-fluid">
-        <!-- Navbar Brand-->
-        <a class="navbar-brand text-primary fs-3" href="#">Puertos</a>
-        <!-- Navbar toggler-->
-        <button class="navbar-toggler border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <!-- Navbar toggler icon-->
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">Portfolio</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <!-- Navbar body-->
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link text-primary fw-bold active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#about-me">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#contact-info">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+<!-- Navigation Bar-->
+<nav class="navbar navbar-expand-md fixed-top bg-dark">
+  <div class="container-fluid">
+    <!-- Navbar Brand-->
+    <a class="navbar-brand text-primary fs-3" href="#">Puertos</a>
+    <!-- Navbar toggler-->
+    <button class="navbar-toggler border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <!-- Navbar toggler icon-->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">Portfolio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </nav>
+      <!-- Navbar body-->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link text-primary fw-bold active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact-info">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var offcanvasElement = document.getElementById('offcanvasNavbar');
+    var offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        offcanvas.hide();
+      });
+    });
+  });
+</script>
+
 
     <body class="bg-dark">
         <script src="../bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
@@ -136,6 +151,7 @@
                 <div class="container">
                   <div class="h4 text-primary text-center">Logistics Dashboard</div>
                   <img src="../img/logistics-dashboard.png" alt="stock-market-dashboard" width="100%">
+                  <a href="../../../Downloads/Dashboard Logistico/app.py">hol</a>
                   <div class="text-secondary"></div>
                 </div>
               </div>

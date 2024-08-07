@@ -1,14 +1,10 @@
-var x="Hello World!"
-console.log(x);
+function circle(radius) {
+    this.radius = radius;
 
-function a () {
-    var x="Hello World! From a";
-    b();
-    console.log(x);
+    this.area = function() {
+        return Math.PI * Math.pow(this.radius,2)
+    }
 }
 
-a();
-
-function b () {
-    console.log(x);
-}
+var mycircle = new circle(4);
+console.log(mycircle)
